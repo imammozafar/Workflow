@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang=”en”>
+<head> 
+	<title>Dashboard - Workspace</title>  
+	<meta charset=”utf-8″> 
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.kuning {
+			background-color: #F2C94C;
+		}
+
+		.btn_kuning {
+			font-family: Poppins;
+			font-style: normal;
+			background-color: #F2C94C;
+			color: white;
+		}
+
+		.btn_hijau_title {
+			font-family: Poppins;
+			font-style: normal;
+			background-color: #27AE60;
+			color: white;
+		}
+
+		.btn_hijau {
+			font-family: Poppins;
+			font-style: normal;
+			font-size: 12px;
+			background-color: #27AE60;
+			color: white;
+		}
+
+		.btn_putih {
+			font-family: Poppins;
+			font-style: normal;
+			text-align: left;
+			font-size: 12px;
+			background-color: white;
+			color: black;
+		}
+
+		.btn_merah {
+			font-family: Poppins;
+			font-style: normal;
+			font-size: 12px;
+			color: white;
+		}
+
+		.abu {
+			background-color: #C4C4C4;
+		}
+
+		.title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 30px;
+			color: white;
+		}
+
+		.texthijau {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 30px;
+			color: #27AE60;
+		}
+
+		.list{
+			max-height: 100%;
+			background-color: #F2F2F2;
+		}
+
+		.bold{
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+		}
+
+		.nama_team {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 13px;
+		}
+
+		.email_team {
+			font-family: Poppins;
+			font-style: normal;
+			font-size: 8px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<nav class="navbar navbar-light kuning">
+		<a class="navbar mr-auto texthijau" href="#">
+			<img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+			atur-in
+		</a>
+		<p class="navbar mx-auto my-auto title"href="#">
+			POS-Project
+		</p>
+		<div class="navbar ml-auto">
+			<div class="btn-group dropleft">
+				<img src="img/dropdown.png" width="30" height="30" class="d-inline-block align-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="dropdown-menu">
+					<a href="overview.html">
+						<button class="dropdown-item" type="button">Overview</button>
+					</a>
+					<a href="billing.html">
+						<button class="dropdown-item" type="button">Billing</button>
+					</a>
+					<a href="collaboration.html">
+						<button class="dropdown-item" type="button">Collaboration</button>
+					</a>
+				</div>
+			</div>
+			<a class="navbar mr-auto texthijau" href="#">
+				<img src="img/profil.png" width="50" height="50" class="rounded-circle" alt="">
+			</a>
+		</div>
+	</nav>
+
+	<!-- button -->
+	<div class="ml-5 pl-3 mt-4">
+		<button type="button" class="btn btn_hijau_title">Publics</button>
+		<button type="button" class="btn btn_kuning ml-1">Front-Team</button>
+	</div>
+
+	<!-- list 1 -->
+	<div class="row ml-5 mt-4">
+		<div class="col-sm mx-1 mr-4 py-4 px-4 mb-auto rounded list">
+			<input class="form-control form-control-sm rounded" type="text" placeholder="enter the list title...">
+			<div class="row">
+				<div class="col-2 mt-3">
+					<button type="button" class="btn btn-sm btn_hijau rounded">Add</button>
+				</div>
+				<div class="col-8 ml-2 pt-3 my-auto bold">
+					X
+				</div>
+			</div>
+		</div>
+
+		<!-- list 2 -->
+		<div class="col-sm mx-1 mr-4 py-4 px-4 mb-auto rounded list">
+			<div class="bold">
+				Planning Fitur
+			</div>
+			<button type="button" class="btn btn_putih btn-lg btn-block mt-2">Multi Login</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Role Login</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Sirkulasi data barang</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Cart graphic penjualan</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Multi payment with xender</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Sync data & rekap 24/x</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Stock Barang</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Simple Management Asset</button>
+			<a href="">
+				<img src="img/card.png" width="60%" height="my-auto" class="d-inline-block align-top mt-2" alt="">
+			</a>
+		</div>
+		
+		<!-- list 3 -->
+		<div class="col-sm mx-1 mr-4 py-4 px-4 mb-auto rounded list">
+			<div class="bold">
+				Planning Modul
+			</div>
+			<button type="button" class="btn btn_putih btn-lg btn-block mt-2">Clients with Vue</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Server side with Feathersjs</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">MongoDB/Firebase</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Vuetify Component</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Material Icons Google</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Tabletopjs</button>
+			<button type="button" class="btn btn_putih btn-lg btn-block">Google fons</button>
+			<a href="">
+				<img src="img/card.png" width="60%" height="my-auto" class="d-inline-block align-top mt-2" alt="">
+			</a>
+		</div>
+
+		<!-- list 4 -->
+		<div class="col-sm mx-1 mr-4 py-4 px-4 mb-auto rounded list">
+			<div class="bold">
+				Listing Team's
+			</div>
+			<!-- Team 1 -->
+			<div class="row my-auto pt-2">
+				<div class="col-2">
+					<img src="img/profil.png" width="35" height="35" class="rounded-circle" alt="">
+				</div>
+				<div class="col-6">
+					<div class="nama_team">
+						Farrid Kuntoro
+					</div>
+					<div class="email_team">
+						hai@kuncreative.co
+					</div>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn_hijau rounded"><img src="img/kunci.png" alt=""></button>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn-danger rounded btn_merah">X</button>
+				</div>
+			</div>
+			<!-- Team 2 -->
+			<div class="row my-auto pt-2">
+				<div class="col-2">
+					<img src="img/profil.png" width="35" height="35" class="rounded-circle" alt="">
+				</div>
+				<div class="col-6">
+					<div class="nama_team">
+						Farrid Kuntoro
+					</div>
+					<div class="email_team">
+						hai@kuncreative.co
+					</div>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn_hijau rounded"><img src="img/buka.png" alt=""></button>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn-danger rounded btn_merah">X</button>
+				</div>
+			</div>
+			<!-- Team 3 -->
+			<div class="row my-auto pt-2">
+				<div class="col-2">
+					<img src="img/profil.png" width="35" height="35" class="rounded-circle" alt="">
+				</div>
+				<div class="col-6">
+					<div class="nama_team">
+						Farrid Kuntoro
+					</div>
+					<div class="email_team">
+						hai@kuncreative.co
+					</div>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn_hijau rounded"><img src="img/buka.png" alt=""></button>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn-danger rounded btn_merah">X</button>
+				</div>
+			</div>
+			<!-- Team 4 -->
+			<div class="row my-auto pt-2">
+				<div class="col-2">
+					<img src="img/profil.png" width="35" height="35" class="rounded-circle" alt="">
+				</div>
+				<div class="col-6">
+					<div class="nama_team">
+						Farrid Kuntoro
+					</div>
+					<div class="email_team">
+						hai@kuncreative.co
+					</div>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn_hijau rounded"><img src="img/buka.png" alt=""></button>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-sm btn-danger rounded btn_merah">X</button>
+				</div>
+			</div>
+			<div class="pt-2">
+				<input class="form-control form-control-sm rounded" type="text" placeholder="enter the list title...">
+			</div>
+			<div class="pt-2">
+				<button type="button" class="btn btn-sm btn_hijau rounded">Invite</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
